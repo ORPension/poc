@@ -8,7 +8,12 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hellow World, Greetings from Github POC Team!!";
+		return "Hellow World, Welcome to POC!";
+	} 
+
+	@RequestMapping("/home")
+	public String home() {
+		return "This is a home page";
 	} 
 
 }
