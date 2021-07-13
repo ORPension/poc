@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello World, Welcome to POC!";
+		return "Hello World, Welcome to Azure/Github POC!";
 	} 
 
 	@RequestMapping("/home")
