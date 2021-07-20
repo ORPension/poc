@@ -4,7 +4,7 @@ name: Azurewebapp CI
 on:
   push:
     branches:
-      - DEV
+      - master
 
 jobs:
   build:
