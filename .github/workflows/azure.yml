@@ -23,4 +23,4 @@ jobs:
           app-name: 'azapp-epsa-app-pilot'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_UAT }} 
           package: '${{ github.workspace }}/pocwebapp/target/*.jar' 
-          slot-name: 'dev' 
+          slot-name: 'uat' 
