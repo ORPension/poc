@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>dashboard</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta name="author" content="Bootstrap contributors" />
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" media="all"
+        href="/themes/epsa/css/style.css" />
+<script type="text/javascript" src="/themes/epsa/js/popper.min.js"></script>
+<script type="text/javascript" src="/themes/epsa/js/script.js"></script>
+<script type="text/javascript" src="/js/epsaweb.js"></script>
+<style>
+.pill-alert {
+        display: flex;
+        align-items: center;
+        border: solid 1px #64b5f6;
+        border-left-width: 6px;
+        border-radius: 6px;
+        background: #e3f2fd;
+        background-repeat: no-repeat;
+        background-position: 2px center;
+        margin: 0;
+        padding: 0px 16px 0px 32px;
+        color: #333;
+        margin-right: 0;
+        background-image:
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2364b5f6' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
+        background-image:
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24' viewBox='0 0 24 24' width='24'%3E%3Cg%3E%3Crect fill='none' height='24' width='24'/%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Crect height='8.48' fill='%2364b5f6' transform='matrix(0.7071 -0.7071 0.7071 0.7071 -6.8717 17.6255)' width='3' x='16.34' y='12.87'/%3E%3Cpath fill='%2364b5f6' d='M17.5,10c1.93,0,3.5-1.57,3.5-3.5c0-0.58-0.16-1.12-0.41-1.6l-2.7,2.7L16.4,6.11l2.7-2.7C18.62,3.16,18.08,3,17.5,3 C15.57,3,14,4.57,14,6.5c0,0.41,0.08,0.8,0.21,1.16l-1.85,1.85l-1.78-1.78l0.71-0.71L9.88,5.61L12,3.49 c-1.17-1.17-3.07-1.17-4.24,0L4.22,7.03l1.41,1.41H2.81L2.1,9.15l3.54,3.54l0.71-0.71V9.15l1.41,1.41l0.71-0.71l1.78,1.78 l-7.41,7.41l2.12,2.12L16.34,9.79C16.7,9.92,17.09,10,17.5,10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pill-alert a {
+        text-decoration: none;
+}
+</style>
+</head>
+<body class="bg-light">
+        <!--header.html for nav bar -->
+        <header>
+        <a id="logo" href="#"><img
+                src="/themes/epsa/images/logo-no-text.svg" alt="Logo" /></a>
+        <h1 class="header-title">
+                <span>EPSA</span>
+        </h1>
+        <div class="profile" tabindex="0">
+                <div class="profile-title">
+                        <span>USER</span>
+                </div>
+                <div class="profile-content">
+                        <ul>
+                            <li><a href="#" onclick="window.open(&quot;\/epsaweb\/about&quot;,&#39;_blank&#39;,&#39;scrollbars=yes,resizable=yes,height=600,width=800,menubar=no,titlebar=no&#39;,false)">About</a></li>
+                                <li id="profile-content-list"><a
+                                        href="/epsaweb/logout">Sign Out</a></li>
+                               
+                        </ul>
+                </div>
+        </div>
+        <script>
+        /*<![CDATA[*/
+        var isOpenFromLink = false;
+        var openFromLinkKey = "epsa_adminopenFromLink";
+        if(isOpenFromLink!=false){
+                setOpenFromLink(openFromLinkKey);
+        }
+        checkOpenFromLink(openFromLinkKey,'profile-content-list');
+        /*]]>*/
+    </script>
+
+</header>
+        <div id="wrapper-main">
+                <nav id="nav-primary">
+                        <div class="nav-hide">
+                                <span>Close</span>
+                        </div>
+                        <ul>
+                                <li class="link-active"><a href="home" class="link-home">Dashboard</a>
+                                </li>
+                                <li><a href="home">Search</a></li>
+                                <li><a href="home">Search Results</a></li>
+                                <li><a href="accounts-overview">Account Overview</a></li>
+                                <li><a href="account-transactions">Transactions</a></li>
+                        </ul>
+                        <ul class="nav-quick">
+                                <li><a class="home" href="#">Home</a></li>
+                                <li><a class="link-contact" href="#">Contact Us</a></li>
+                                <li><a class="link-login" href="#">Log In</a></li>
+                                <li><a class="logout" href="#">Log Out</a></li>
+                        </ul>
+                </nav>
+                <main>
+
+          <ul class="breadcrumb">
+        <li>
+          <a href="home">Search</a>
+        </li>
+       
+      </ul>
+      <h2>Search Accounts</h2>
+                <section class="panel">
+                        <form action="/epsaweb/search" method="post">
+                               
+                                <div class="row">
+                                        <div class="form-group">
+                                                <div class="form-item">
+                                                        <label for="fieldFirstName">First Name</label>
+                                                        <div class="form-input">
+                                                                <input id="fieldFirstName" type="text" value="" size="35" name="fName" placeholder="Enter first name"></input>
+                                                        </div>
+                                                </div>
+                                                <div class="form-item">
+                                                        <label for="fieldLastName">Last Name</label>
+                                                        <div class="form-input">
+                                                                <input id="fieldLastName" type="text" value="" size="35" name="lName" placeholder="Enter last name"></input>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <div class="form-item">
+                                                        <label for="fieldPERSID">PERS ID</label>
+                                                        <div class="form-input">
+                                                                <input id="fieldPERSID" type="text" value="" size="15" name="persId" placeholder="6-digit id"></input>
+                                                        </div>
+                                                </div>
+                                                <div class="form-item">
+                                                        <label for="fieldSSN">SSN</label>
+                                                        <div class="form-input">
+                                                                <input id="fieldSSN" type="text" value=""
+                                                                        size="15" name="ssn"></input>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="button-group">
+                                        <button type="submit" class="button">Search</button>
+                                </div>
+                        </form>
+                </section>
+                <form action="/epsaweb/persons-pagination"
+                        method="post" id="searchFormId">
+                       
+                </form>
+        </main>
+        </div>
+        <!-- Page footer -->
+        <!-- <footer id="footer"></footer> -->
+</body>
+</html>
